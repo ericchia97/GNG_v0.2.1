@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="14b1c1f4-4ad5-40c6-907d-0de2f97d1152" ChangeDateTime="09/28/2020 12:12:28">
+    <Property Name="ElementName" Value="[dbo].[EximiusParticipantTable].[ConatctNumber]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[EximiusParticipantTable]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ContactNumber" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="71a97d7c-94b8-4ec9-8d92-3f0b9d3bf58e" ChangeDateTime="09/28/2020 12:12:54">
+    <Property Name="ElementName" Value="[dbo].[EximiusParticipantTable].[ContactNumber]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[EximiusParticipantTable]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="CaptainContactNumber" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="d7243d91-c523-4d6d-811f-59b4f8c04f0c" ChangeDateTime="09/28/2020 12:21:03">
+    <Property Name="ElementName" Value="[dbo].[EximiusParticipantTable].[Member1_State]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[EximiusParticipantTable]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Member2_State" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="b3fb18c1-43b1-419b-9b6e-c49f9ba0a5c4" ChangeDateTime="09/28/2020 12:22:30">
+    <Property Name="ElementName" Value="[dbo].[EximiusParticipantTable].[Member4]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[EximiusParticipantTable]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Member4_Name" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="1a530462-3a56-4f6b-ab1d-73ede2ef3905" ChangeDateTime="09/28/2020 16:41:54">
+    <Property Name="ElementName" Value="[dbo].[EximiusParticipantTable].[CaptainName]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[EximiusParticipantTable]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="FullName" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="cbc1d7cc-2f20-469f-905d-b37b2f8546ab" ChangeDateTime="09/28/2020 16:41:59">
+    <Property Name="ElementName" Value="[dbo].[EximiusParticipantTable].[CaptainIGN]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[EximiusParticipantTable]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="IGN" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="f8eba3dc-eaaa-4c41-a6b9-a99915726ed5" ChangeDateTime="09/28/2020 16:42:03">
+    <Property Name="ElementName" Value="[dbo].[EximiusParticipantTable].[CaptainIC]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[EximiusParticipantTable]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="IC" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="12d6c726-d201-4809-9ae2-e9d3839725e6" ChangeDateTime="09/28/2020 16:42:08">
+    <Property Name="ElementName" Value="[dbo].[EximiusParticipantTable].[CaptainContactNumber]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[EximiusParticipantTable]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ContactNumber" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="0265f19a-a4c9-4660-8d51-373bcaeab466" ChangeDateTime="09/28/2020 16:42:11">
+    <Property Name="ElementName" Value="[dbo].[EximiusParticipantTable].[CaptainRace]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[EximiusParticipantTable]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Race" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="5aecba1a-4905-4724-9e29-7d83192b22ec" ChangeDateTime="09/28/2020 16:42:18">
+    <Property Name="ElementName" Value="[dbo].[EximiusParticipantTable].[CaptainState]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[EximiusParticipantTable]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="State" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="2796b6ad-c19b-47e2-a703-8c33bc7c5f7b" ChangeDateTime="09/28/2020 16:42:35">
+    <Property Name="ElementName" Value="[dbo].[EximiusParticipantTable].[Mamber1_State]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[EximiusParticipantTable]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Member1_State" />
+  </Operation>
+</Operations>

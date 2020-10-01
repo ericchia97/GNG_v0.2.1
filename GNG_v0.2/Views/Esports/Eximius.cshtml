@@ -1,0 +1,453 @@
+﻿@model GNG_v0._2.ViewModels.EximiusWithPhotoViewModel
+
+<!DOCTYPE html>
+<html lang="en">
+<body>
+
+    <!-- sign in -->
+    <div class="sign section--full-bg" data-bg="img/bg2.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md">
+                    <div class="sign__content">
+                        <!-- authorization form -->
+                        <form enctype="multipart/form-data" action="#" class="sign__form__wider" method="post">
+                            <a href="index.html" class="sign__logo;">
+                                <img src="~/img/esport/ExismiusPoster.png" width="1000" height="500">
+                            </a>
+
+                            <lable><p style="color:red;">Registration</p></lable>
+
+                            <div class="sign__group">
+                                <input asp-for="Email" class="sign__input" placeholder="Email">
+                                <span asp-validation-for="Email" class="text-danger" style="color:red;font-size:60%"></span>
+                            </div>
+
+                            <div class="sign__group">
+                                <input asp-for="TeamName" class="sign__input" placeholder="Team Name">
+                                <span asp-validation-for="TeamName" class="text-danger" style="color:red;font-size:60%"></span>
+                            </div>
+
+                            <lable><p style="color:white;">Participants Information (Team Captain)</p></lable>
+
+                            <div class="sign__group">
+                                <input asp-for="FullName" class="sign__input" placeholder="Full Name">
+                                <span asp-validation-for="FullName" class="text-danger" style="color:red;font-size:60%"></span>
+                            </div>
+
+                            <div class="sign__group">
+                                <input asp-for="IGN" class="sign__input" placeholder="IGN">
+                                <span asp-validation-for="IGN" class="text-danger" style="color:red;font-size:60%"></span>
+                            </div>
+
+                            <div class="sign__group">
+                                <input asp-for="IC" class="sign__input" placeholder="IC">
+                                <span asp-validation-for="IC" class="text-danger" style="color:red;font-size:60%"></span>
+                            </div>
+
+                            <div class="sign__group">
+                                <label style="color:white">Upload IC:</label>
+                                <input asp-for="Photo" class="sign__input" placeholder="Photo">
+                                <span asp-validation-for="Photo" class="text-danger" style="color:red;font-size:60%"></span>
+                            </div>
+
+                            <div class="sign__group">
+                                <input asp-for="ContactNumber" class="sign__input" placeholder="Contact Number">
+                                <span asp-validation-for="ContactNumber" class="text-danger" style="color:red;font-size:60%"></span>
+                            </div>
+
+                            <div class="sign__group">
+                                <label style="color:white">Race:</label>
+                                <div class="custom-select">
+                                    <select asp-for="Race">
+                                        <option value="" selected disabled hidden>---Select an option---</option>
+                                        <option value="Malay"> Malay</option>
+                                        <option value="Chinese">Chinese</option>
+                                        <option value="India">India</option>
+                                        <option value="Bumiputra">Bumiputra</option>
+                                        <option value="Others">Others</option>
+                                    </select>
+                                </div>
+                                <span asp-validation-for="Race" class="text-danger" style="color:red;font-size:60%"></span>
+                            </div>
+
+                            <div class="sign__group">
+                                <label style="color:white">State:</label>
+                                <div class="custom-select">
+                                    <select asp-for="State">
+                                        <option value="" selected disabled hidden>---Select an option---</option>
+                                        <option value="Johor">Johor</option>
+                                        <option value="Kedah">Kedah</option>
+                                        <option value="Kelantan">Kelantan</option>
+                                        <option value="Melacca">Melacca</option>
+                                        <option value="Negeri Sembilan">Negeri Sembilan</option>
+                                        <option value="Pahang">Pahang</option>
+                                        <option value="Penang">Penang</option>
+                                        <option value="Perak">Perak</option>
+                                        <option value="Perlis">Perlis</option>
+                                        <option value="Sabah">Sabah</option>
+                                        <option value="Sarawak">Sarawak</option>
+                                        <option value="Selangor">Selangor</option>
+                                        <option value="Terengganu">Terengganu</option>
+                                    </select>
+                                </div>
+                                <span asp-validation-for="State" class="text-danger" style="color:red;font-size:60%"></span>
+                            </div>
+
+                            <lable><p style="color:white;">Participants Information (Member 1)</p></lable>
+                            <!-- member 1-->
+                            <div class="sign__group">
+                                <input asp-for="Member1_Name" class="sign__input" placeholder="Name">
+                                <span asp-validation-for="Member1_Name" class="text-danger" style="color:red;font-size:60%"></span>
+                            </div>
+                            <div class="sign__group">
+                                <input asp-for="Member1_IGN" class="sign__input" placeholder="IGN">
+                                <span asp-validation-for="Member1_IGN" class="text-danger" style="color:red;font-size:60%"></span>
+                            </div>
+                            <div class="sign__group">
+                                <input asp-for="Member1_IC" class="sign__input" placeholder="IC">
+                                <span asp-validation-for="Member1_IC" class="text-danger" style="color:red;font-size:60%"></span>
+                            </div>
+
+                            <div class="sign__group">
+                                <label style="color:white">Upload IC:</label>
+                                <input asp-for="Photo1" class="sign__input" placeholder="Photo">
+                                <span asp-validation-for="Photo1" class="text-danger" style="color:red;font-size:60%"></span>
+                            </div>
+
+                            <div class="sign__group">
+                                <input asp-for="Member1_ContactNumber" class="sign__input" placeholder="Contact Number">
+                                <span asp-validation-for="Member1_ContactNumber" class="text-danger" style="color:red;font-size:60%"></span>
+                            </div>
+                            <div class="sign__group">
+                                <label style="color:white">Race:</label>
+                                <div class="custom-select">
+                                    <select asp-for="Member1_Race">
+                                        <option value="" selected disabled hidden>---Select an option---</option>
+                                        <option value="Malay"> Malay</option>
+                                        <option value="Chinese">Chinese</option>
+                                        <option value="India">India</option>
+                                        <option value="Bumiputra">Bumiputra</option>
+                                        <option value="Others">Others</option>
+                                    </select>
+                                </div>
+                                <span asp-validation-for="Member1_Race" class="text-danger" style="color:red;font-size:60%"></span>
+                            </div>
+                            <div class="sign__group">
+                                <label style="color:white">State:</label>
+                                <div class="custom-select">
+                                    <select asp-for="Member1_State">
+                                        <option value="" selected disabled hidden>---Select an option---</option>
+                                        <option value="Johor">Johor</option>
+                                        <option value="Kedah">Kedah</option>
+                                        <option value="Kelantan">Kelantan</option>
+                                        <option value="Melacca">Melacca</option>
+                                        <option value="Negeri Sembilan">Negeri Sembilan</option>
+                                        <option value="Pahang">Pahang</option>
+                                        <option value="Penang">Penang</option>
+                                        <option value="Perak">Perak</option>
+                                        <option value="Perlis">Perlis</option>
+                                        <option value="Sabah">Sabah</option>
+                                        <option value="Sarawak">Sarawak</option>
+                                        <option value="Selangor">Selangor</option>
+                                        <option value="Terengganu">Terengganu</option>
+                                    </select>
+                                </div>
+                                <span asp-validation-for="Member1_State" class="text-danger" style="color:red;font-size:60%"></span>
+                            </div>
+
+                            <lable><p style="color:white;">Participants Information (Member 2)</p></lable>
+                            <!-- member 2-->
+                            <div class="sign__group">
+                                <input asp-for="Member2_Name" class="sign__input" placeholder="Name">
+                                <span asp-validation-for="Member2_Name" class="text-danger" style="color:red;font-size:60%"></span>
+                            </div>
+                            <div class="sign__group">
+                                <input asp-for="Member2_IGN" class="sign__input" placeholder="IGN">
+                                <span asp-validation-for="Member2_IGN" class="text-danger" style="color:red;font-size:60%"></span>
+                            </div>
+                            <div class="sign__group">
+                                <input asp-for="Member2_IC" class="sign__input" placeholder="IC">
+                                <span asp-validation-for="Member2_IC" class="text-danger" style="color:red;font-size:60%"></span>
+                            </div>
+
+                            <div class="sign__group">
+                                <label style="color:white">Upload IC:</label>
+                                <input asp-for="Photo2" class="sign__input" placeholder="Photo">
+                                <span asp-validation-for="Photo2" class="text-danger" style="color:red;font-size:60%"></span>
+                            </div>
+
+                            <div class="sign__group">
+                                <input asp-for="Member2_ContactNumber" class="sign__input" placeholder="Contact Number">
+                                <span asp-validation-for="Member2_ContactNumber" class="text-danger" style="color:red;font-size:60%"></span>
+                            </div>
+                            <div class="sign__group">
+                                <label style="color:white">Race:</label>
+                                <div class="custom-select">
+                                    <select asp-for="Member2_Race">
+                                        <option value="" selected disabled hidden>---Select an option---</option>
+                                        <option value="Malay"> Malay</option>
+                                        <option value="Chinese">Chinese</option>
+                                        <option value="India">India</option>
+                                        <option value="Bumiputra">Bumiputra</option>
+                                        <option value="Others">Others</option>
+                                    </select>
+                                </div>
+                                <span asp-validation-for="Member2_Race" class="text-danger" style="color:red;font-size:60%"></span>
+                            </div>
+                            <div class="sign__group">
+                                <label style="color:white">State:</label>
+                                <div class="custom-select">
+                                    <select asp-for="Member2_State">
+                                        <option value="" selected disabled hidden>---Select an option---</option>
+                                        <option value="Johor">Johor</option>
+                                        <option value="Kedah">Kedah</option>
+                                        <option value="Kelantan">Kelantan</option>
+                                        <option value="Melacca">Melacca</option>
+                                        <option value="Negeri Sembilan">Negeri Sembilan</option>
+                                        <option value="Pahang">Pahang</option>
+                                        <option value="Penang">Penang</option>
+                                        <option value="Perak">Perak</option>
+                                        <option value="Perlis">Perlis</option>
+                                        <option value="Sabah">Sabah</option>
+                                        <option value="Sarawak">Sarawak</option>
+                                        <option value="Selangor">Selangor</option>
+                                        <option value="Terengganu">Terengganu</option>
+                                    </select>
+                                </div>
+                                <span asp-validation-for="Member2_State" class="text-danger" style="color:red;font-size:60%"></span>
+                            </div>
+
+                            <lable><p style="color:white;">Participants Information (Member 3)</p></lable>
+                            <!-- member 3-->
+                            <div class="sign__group">
+                                <input asp-for="Member3_Name" class="sign__input" placeholder="Name">
+                                <span asp-validation-for="Member3_Name" class="text-danger" style="color:red;font-size:60%"></span>
+                            </div>
+                            <div class="sign__group">
+                                <input asp-for="Member3_IGN" class="sign__input" placeholder="IGN">
+                                <span asp-validation-for="Member3_IGN" class="text-danger" style="color:red;font-size:60%"></span>
+                            </div>
+                            <div class="sign__group">
+                                <input asp-for="Member3_IC" class="sign__input" placeholder="IC">
+                                <span asp-validation-for="Member3_IC" class="text-danger" style="color:red;font-size:60%"></span>
+                            </div>
+
+                            <div class="sign__group">
+                                <label style="color:white">Upload IC:</label>
+                                <input asp-for="Photo3" class="sign__input" placeholder="Photo">
+                                <span asp-validation-for="Photo3" class="text-danger" style="color:red;font-size:60%"></span>
+                            </div>
+
+                            <div class="sign__group">
+                                <input asp-for="Member3_ContactNumber" class="sign__input" placeholder="Contact Number">
+                                <span asp-validation-for="Member3_ContactNumber" class="text-danger" style="color:red;font-size:60%"></span>
+                            </div>
+                            <div class="sign__group">
+                                <label style="color:white">Race:</label>
+                                <div class="custom-select">
+                                    <select asp-for="Member3_Race">
+                                        <option value="" selected disabled hidden>---Select an option---</option>
+                                        <option value="Malay"> Malay</option>
+                                        <option value="Chinese">Chinese</option>
+                                        <option value="India">India</option>
+                                        <option value="Bumiputra">Bumiputra</option>
+                                        <option value="Others">Others</option>
+                                    </select>
+                                </div>
+                                <span asp-validation-for="Member3_Race" class="text-danger" style="color:red;font-size:60%"></span>
+                            </div>
+                            <div class="sign__group">
+                                <label style="color:white">State:</label>
+                                <div class="custom-select">
+                                    <select asp-for="Member3_State">
+                                        <option value="" selected disabled hidden>---Select an option---</option>
+                                        <option value="Johor">Johor</option>
+                                        <option value="Kedah">Kedah</option>
+                                        <option value="Kelantan">Kelantan</option>
+                                        <option value="Melacca">Melacca</option>
+                                        <option value="Negeri Sembilan">Negeri Sembilan</option>
+                                        <option value="Pahang">Pahang</option>
+                                        <option value="Penang">Penang</option>
+                                        <option value="Perak">Perak</option>
+                                        <option value="Perlis">Perlis</option>
+                                        <option value="Sabah">Sabah</option>
+                                        <option value="Sarawak">Sarawak</option>
+                                        <option value="Selangor">Selangor</option>
+                                        <option value="Terengganu">Terengganu</option>
+                                    </select>
+                                </div>
+                                <span asp-validation-for="Member3_State" class="text-danger" style="color:red;font-size:60%"></span>
+                            </div>
+
+                            <lable><p style="color:white;">Participants Information (Member 4)</p></lable>
+                            <!-- member 4-->
+                            <div class="sign__group">
+                                <input asp-for="Member4_Name" class="sign__input" placeholder="Name">
+                                <span asp-validation-for="Member4_Name" class="text-danger" style="color:red;font-size:60%"></span>
+                            </div>
+                            <div class="sign__group">
+                                <input asp-for="Member4_IGN" class="sign__input" placeholder="IGN">
+                                <span asp-validation-for="Member4_IGN" class="text-danger" style="color:red;font-size:60%"></span>
+                            </div>
+                            <div class="sign__group">
+                                <input asp-for="Member4_IC" class="sign__input" placeholder="IC">
+                                <span asp-validation-for="Member4_IC" class="text-danger" style="color:red;font-size:60%"></span>
+                            </div>
+
+                            <div class="sign__group">
+                                <label style="color:white">Upload IC:</label>
+                                <input asp-for="Photo4" class="sign__input" placeholder="Photo">
+                                <span asp-validation-for="Photo4" class="text-danger" style="color:red;font-size:60%"></span>
+                            </div>
+
+                            <div class="sign__group">
+                                <input asp-for="Member4_ContactNumber" class="sign__input" placeholder="Contact Number">
+                                <span asp-validation-for="Member4_ContactNumber" class="text-danger" style="color:red;font-size:60%"></span>
+                            </div>
+                            <div class="sign__group">
+                                <label style="color:white">Race:</label>
+                                <div class="custom-select">
+                                    <select asp-for="Member4_Race">
+                                        <option value="" selected disabled hidden>---Select an option---</option>
+                                        <option value="Malay"> Malay</option>
+                                        <option value="Chinese">Chinese</option>
+                                        <option value="India">India</option>
+                                        <option value="Bumiputra">Bumiputra</option>
+                                        <option value="Others">Others</option>
+                                    </select>
+                                </div>
+                                <span asp-validation-for="Member4_Race" class="text-danger" style="color:red;font-size:60%"></span>
+                            </div>
+                            <div class="sign__group">
+                                <label style="color:white">State:</label>
+                                <div class="custom-select">
+                                    <select asp-for="Member4_State">
+                                        <option value="" selected disabled hidden>---Select an option---</option>
+                                        <option value="Johor">Johor</option>
+                                        <option value="Kedah">Kedah</option>
+                                        <option value="Kelantan">Kelantan</option>
+                                        <option value="Melacca">Melacca</option>
+                                        <option value="Negeri Sembilan">Negeri Sembilan</option>
+                                        <option value="Pahang">Pahang</option>
+                                        <option value="Penang">Penang</option>
+                                        <option value="Perak">Perak</option>
+                                        <option value="Perlis">Perlis</option>
+                                        <option value="Sabah">Sabah</option>
+                                        <option value="Sarawak">Sarawak</option>
+                                        <option value="Selangor">Selangor</option>
+                                        <option value="Terengganu">Terengganu</option>
+                                    </select>
+                                </div>
+                                <span asp-validation-for="Member4_State" class="text-danger" style="color:red;font-size:60%"></span>
+                            </div>
+
+                            <lable><p style="color:white;">Disclaimer</p></lable>
+
+                            <div class="sign__group sign__group--checkbox">
+                                <input asp-for="Understand" type="checkbox">
+                                <label asp-for="Understand">I understand this is an Early Access Pre-Release game, and that the game code is only for use for myself only.</label>
+                            </div>
+
+                            <button class="sign__btn" type="submit">Register</button>
+                        </form>
+                        <!-- end authorization form -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end sign in -->
+    @if (ViewBag.Message != null)
+    {
+    <script type="text/javascript">
+
+                    window.onload = function ()
+                    {
+                    alert("@ViewBag.Message");
+                };
+    </script>}
+
+    <script>
+        var x, i, j, l, ll, selElmnt, a, b, c;
+        /*look for any elements with the class "custom-select":*/
+        x = document.getElementsByClassName("custom-select");
+        l = x.length;
+        for (i = 0; i < l; i++) {
+            selElmnt = x[i].getElementsByTagName("select")[0];
+            ll = selElmnt.length;
+            /*for each element, create a new DIV that will act as the selected item:*/
+            a = document.createElement("DIV");
+            a.setAttribute("class", "select-selected");
+            a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+            x[i].appendChild(a);
+            /*for each element, create a new DIV that will contain the option list:*/
+            b = document.createElement("DIV");
+            b.setAttribute("class", "select-items select-hide");
+            for (j = 1; j < ll; j++) {
+                /*for each option in the original select element,
+                create a new DIV that will act as an option item:*/
+                c = document.createElement("DIV");
+                c.innerHTML = selElmnt.options[j].innerHTML;
+                c.addEventListener("click", function (e) {
+                    /*when an item is clicked, update the original select box,
+                    and the selected item:*/
+                    var y, i, k, s, h, sl, yl;
+                    s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+                    sl = s.length;
+                    h = this.parentNode.previousSibling;
+                    for (i = 0; i < sl; i++) {
+                        if (s.options[i].innerHTML == this.innerHTML) {
+                            s.selectedIndex = i;
+                            h.innerHTML = this.innerHTML;
+                            y = this.parentNode.getElementsByClassName("same-as-selected");
+                            yl = y.length;
+                            for (k = 0; k < yl; k++) {
+                                y[k].removeAttribute("class");
+                            }
+                            this.setAttribute("class", "same-as-selected");
+                            break;
+                        }
+                    }
+                    h.click();
+                });
+                b.appendChild(c);
+            }
+            x[i].appendChild(b);
+            a.addEventListener("click", function (e) {
+                /*when the select box is clicked, close any other select boxes,
+                and open/close the current select box:*/
+                e.stopPropagation();
+                closeAllSelect(this);
+                this.nextSibling.classList.toggle("select-hide");
+                this.classList.toggle("select-arrow-active");
+            });
+        }
+        function closeAllSelect(elmnt) {
+            /*a function that will close all select boxes in the document,
+            except the current select box:*/
+            var x, y, i, xl, yl, arrNo = [];
+            x = document.getElementsByClassName("select-items");
+            y = document.getElementsByClassName("select-selected");
+            xl = x.length;
+            yl = y.length;
+            for (i = 0; i < yl; i++) {
+                if (elmnt == y[i]) {
+                    arrNo.push(i)
+                } else {
+                    y[i].classList.remove("select-arrow-active");
+                }
+            }
+            for (i = 0; i < xl; i++) {
+                if (arrNo.indexOf(i)) {
+                    x[i].classList.add("select-hide");
+                }
+            }
+        }
+        /*if the user clicks anywhere outside the select box,
+        then close all select boxes:*/
+        document.addEventListener("click", closeAllSelect);
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,225 @@
+﻿@model GNG_v0._2.ViewModels.EximiusConfirmationViewModel
+
+@{
+    var photopath = "~/StoredImages/" + Model.Info_details.PhotoPath ?? "no.image.jpg";
+    var photopath1 = "~/StoredImages/" + Model.Info_details.PhotoPath1 ?? "no.image.jpg";
+    var photopath2 = "~/StoredImages/" + Model.Info_details.PhotoPath2 ?? "no.image.jpg";
+    var photopath3 = "~/StoredImages/" + Model.Info_details.PhotoPath3 ?? "no.image.jpg";
+    var photopath4 = "~/StoredImages/" + Model.Info_details.PhotoPath4 ?? "no.image.jpg";
+}
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <!-- sign in -->
+    <div class="sign section--full-bg" data-bg="img/bg2.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md">
+                    <div class="sign__content">
+                        <!-- authorization form -->
+                        <form enctype="multipart/form-data" action="#" class="sign__form__wider" method="post">
+                            <a href="index.html" class="sign__logo;">
+                                <img src="~/img/esport/ExismiusPoster.png" width="1000" height="500">
+                            </a>
+                            <lable><p style="color:red;">@ViewBag.Message</p></lable>
+
+                            <div class="sign__group">
+                                <label style="color:white">Email:</label>
+                                <a class="header__nav-link" href="#" role="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> @Model.Info_details.Email </a>
+                            </div>
+
+                            <div class="sign__group">
+                                <label style="color:white">Team Name:</label>
+                                <a class="header__nav-link" href="#" role="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> @Model.Info_details.TeamName </a>
+                            </div>
+
+                            <lable><p style="color:white;">Participants Information (Team Captain)</p></lable>
+
+                            <div class="sign__group">
+                                <label style="color:white">Full Name:</label>
+                                <a class="header__nav-link" href="#" role="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> @Model.Info_details.FullName </a>
+                            </div>
+
+                            <div class="sign__group">
+                                <label style="color:white">In Game Name:</label>
+                                <a class="header__nav-link" href="#" role="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> @Model.Info_details.IGN </a>
+                            </div>
+
+                            <div class="sign__group">
+                                <label style="color:white">IC:</label>
+                                <a class="header__nav-link" href="#" role="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> @Model.Info_details.IC </a>
+                            </div>
+
+                            <div class="sign__group">
+                                <img src="@photopath" asp-append-version="true" width="480" height="270" />
+                            </div>
+
+                            <div class="sign__group">
+                                <label style="color:white">Contact Number:</label>
+                                <a class="header__nav-link" href="#" role="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> @Model.Info_details.ContactNumber </a>
+                            </div>
+
+                            <div class="sign__group">
+                                <label style="color:white">Race:</label>
+                                <a class="header__nav-link" href="#" role="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> @Model.Info_details.Race </a>
+                            </div>
+
+                            <div class="sign__group">
+                                <label style="color:white">State:</label>
+                                <a class="header__nav-link" href="#" role="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> @Model.Info_details.State </a>
+                            </div>
+
+                            <lable><p style="color:white;">Participants Information (Member 1)</p></lable>
+                            <!-- member 1-->
+                            <div class="sign__group">
+                                <label style="color:white">Full Name:</label>
+                                <a class="header__nav-link" href="#" role="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> @Model.Info_details.Member1_Name </a>
+                            </div>
+
+                            <div class="sign__group">
+                                <label style="color:white">In Game Name:</label>
+                                <a class="header__nav-link" href="#" role="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> @Model.Info_details.Member1_IGN </a>
+                            </div>
+
+                            <div class="sign__group">
+                                <label style="color:white">IC:</label>
+                                <a class="header__nav-link" href="#" role="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> @Model.Info_details.Member1_IC </a>
+                            </div>
+
+                            <div class="sign__group">
+                                <img src="@photopath1" asp-append-version="true" width="480" height="270" />
+                            </div>
+
+                            <div class="sign__group">
+                                <label style="color:white">Contact Number:</label>
+                                <a class="header__nav-link" href="#" role="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> @Model.Info_details.Member1_ContactNumber </a>
+                            </div>
+
+                            <div class="sign__group">
+                                <label style="color:white">Race:</label>
+                                <a class="header__nav-link" href="#" role="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> @Model.Info_details.Member1_Race </a>
+                            </div>
+
+                            <div class="sign__group">
+                                <label style="color:white">State:</label>
+                                <a class="header__nav-link" href="#" role="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> @Model.Info_details.Member1_State </a>
+                            </div>
+
+
+                            <lable><p style="color:white;">Participants Information (Member 2)</p></lable>
+                            <!-- member 2-->
+                            <div class="sign__group">
+                                <label style="color:white">Full Name:</label>
+                                <a class="header__nav-link" href="#" role="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> @Model.Info_details.Member2_Name </a>
+                            </div>
+
+                            <div class="sign__group">
+                                <label style="color:white">In Game Name:</label>
+                                <a class="header__nav-link" href="#" role="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> @Model.Info_details.Member2_IGN </a>
+                            </div>
+
+                            <div class="sign__group">
+                                <label style="color:white">IC:</label>
+                                <a class="header__nav-link" href="#" role="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> @Model.Info_details.Member2_IC </a>
+                            </div>
+
+                            <div class="sign__group">
+                                <img src="@photopath2" asp-append-version="true" width="480" height="270" />
+                            </div>
+
+                            <div class="sign__group">
+                                <label style="color:white">Contact Number:</label>
+                                <a class="header__nav-link" href="#" role="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> @Model.Info_details.Member2_ContactNumber </a>
+                            </div>
+
+                            <div class="sign__group">
+                                <label style="color:white">Race:</label>
+                                <a class="header__nav-link" href="#" role="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> @Model.Info_details.Member2_Race </a>
+                            </div>
+
+                            <div class="sign__group">
+                                <label style="color:white">State:</label>
+                                <a class="header__nav-link" href="#" role="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> @Model.Info_details.Member2_State </a>
+                            </div>
+
+                            <lable><p style="color:white;">Participants Information (Member 3)</p></lable>
+                            <!-- member 3-->
+                            <div class="sign__group">
+                                <label style="color:white">Full Name:</label>
+                                <a class="header__nav-link" href="#" role="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> @Model.Info_details.Member3_Name </a>
+                            </div>
+
+                            <div class="sign__group">
+                                <label style="color:white">In Game Name:</label>
+                                <a class="header__nav-link" href="#" role="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> @Model.Info_details.Member3_IGN </a>
+                            </div>
+
+                            <div class="sign__group">
+                                <label style="color:white">IC:</label>
+                                <a class="header__nav-link" href="#" role="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> @Model.Info_details.Member3_IC </a>
+                            </div>
+
+                            <div class="sign__group">
+                                <img src="@photopath3" asp-append-version="true" width="480" height="270" />
+                            </div>
+
+                            <div class="sign__group">
+                                <label style="color:white">Contact Number:</label>
+                                <a class="header__nav-link" href="#" role="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> @Model.Info_details.Member3_ContactNumber </a>
+                            </div>
+
+                            <div class="sign__group">
+                                <label style="color:white">Race:</label>
+                                <a class="header__nav-link" href="#" role="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> @Model.Info_details.Member3_Race </a>
+                            </div>
+
+                            <div class="sign__group">
+                                <label style="color:white">State:</label>
+                                <a class="header__nav-link" href="#" role="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> @Model.Info_details.Member3_State </a>
+                            </div>
+                            <lable><p style="color:white;">Participants Information (Member 4)</p></lable>
+                            <!-- member 4-->
+                            <div class="sign__group">
+                                <label style="color:white">Full Name:</label>
+                                <a class="header__nav-link" href="#" role="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> @Model.Info_details.Member4_Name </a>
+                            </div>
+
+                            <div class="sign__group">
+                                <label style="color:white">In Game Name:</label>
+                                <a class="header__nav-link" href="#" role="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> @Model.Info_details.Member4_IGN </a>
+                            </div>
+
+                            <div class="sign__group">
+                                <label style="color:white">IC:</label>
+                                <a class="header__nav-link" href="#" role="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> @Model.Info_details.Member4_IC </a>
+                            </div>
+
+                            <div class="sign__group">
+                                <img src="@photopath4" asp-append-version="true" width="480" height="270" />
+                            </div>
+
+                            <div class="sign__group">
+                                <label style="color:white">Contact Number:</label>
+                                <a class="header__nav-link" href="#" role="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> @Model.Info_details.Member4_ContactNumber </a>
+                            </div>
+
+                            <div class="sign__group">
+                                <label style="color:white">Race:</label>
+                                <a class="header__nav-link" href="#" role="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> @Model.Info_details.Member4_Race </a>
+                            </div>
+
+                            <div class="sign__group">
+                                <label style="color:white">State:</label>
+                                <a class="header__nav-link" href="#" role="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> @Model.Info_details.Member4_State </a>
+                            </div>
+
+                            <button class="sign__btn" asp-action="index" asp-controller="home">Register</button>
+                        </form>
+                        <!-- end authorization form -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

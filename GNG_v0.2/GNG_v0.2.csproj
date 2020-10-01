@@ -1,0 +1,45 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>GNG_v0._2</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="Views\Home\404.html" />
+    <Content Include="Views\Home\about.html" />
+    <Content Include="Views\Home\article.html" />
+    <Content Include="Views\Home\catalog.html" />
+    <Content Include="Views\Home\checkout.html" />
+    <Content Include="Views\Home\contacts.html" />
+    <Content Include="Views\Home\faq.html" />
+    <Content Include="Views\Home\favorites.html" />
+    <Content Include="Views\Home\index.html" />
+    <Content Include="Views\Home\interview.html" />
+    <Content Include="Views\Home\news.html" />
+    <Content Include="Views\Home\privacy.html" />
+    <Content Include="Views\Home\profile.html" />
+    <Content Include="Views\Home\signin.html" />
+    <Content Include="Views\Home\signup.html" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\js\site.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.8" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="3.1.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.8">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\StoredImages\" />
+  </ItemGroup>
+
+</Project>

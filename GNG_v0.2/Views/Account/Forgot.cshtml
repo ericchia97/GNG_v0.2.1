@@ -1,0 +1,43 @@
+﻿@model GNG_v0._2.ViewModels.ForgotPasswordViewModel
+
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <!-- forgot password -->
+    <div class="sign section--full-bg" data-bg="img/bg2.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="sign__content">
+                        <!-- authorization form -->
+                        <form action="#" class="sign__form" method="post">
+                            <a href="index.html" class="sign__logo">
+                                <img src="~/img/logo.svg" alt="">
+                            </a>
+
+                            <div class="sign__group">
+                                <input asp-for="Forgot_email" class="sign__input" placeholder="Email">
+                                <span asp-validation-for="Forgot_email" class="text-danger" style="color:red;font-size:60%"></span>
+                            </div>
+
+                            <div class="sign__group sign__group--checkbox">
+                                <input id="remember" name="remember" type="checkbox" checked="checked">
+                                <label for="remember">I agree to the <a href="Privacy">Privacy Policy</a></label>
+                            </div>
+
+                            <button class="sign__btn" type="submit">Reset Password</button>
+
+                            <span class="sign__text">We will send a password to your Email</span>
+                        </form>
+                        <!-- end authorization form -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end sign in -->
+
+
+</body>
+</html>
